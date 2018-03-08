@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hbwy.fan.speex.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_startrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="29dp"
+        android:text="开始录音" />
+
+    <Button
+        android:id="@+id/btn_stoprecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_startrecord"
+        android:layout_centerHorizontal="true"
+        android:text="停止录音" />
+
+    <Button
+        android:id="@+id/btn_playrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_stoprecord"
+        android:layout_alignBottom="@+id/btn_stoprecord"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:text="播放MIC录音" />
+
+    <Button
+        android:id="@+id/btn_speex_encode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_startrecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="speex编码后" />
+
+    <Button
+        android:id="@+id/btn_speex_decode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_speex_encode"
+        android:layout_marginTop="24dp"
+        android:text="speex解码后" />
+
+    <Button
+        android:id="@+id/btn_play_decoded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_speex_decode"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:text="播放经解码后的文件" />
+</RelativeLayout>
